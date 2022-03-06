@@ -18,16 +18,6 @@ function ViewDeck({ decks, loadDecks }){
       setDeck(filteredDeck[0]);
     }, [deckId, decks]) 
 
-    
-    // async function loadDeck(){
-    //   console.log("Decks: ", decks, deckId);
-    //   const filteredDeck = decks.filter((deck) => deck.id === parseInt(deckId));
-    //   console.log("Filtered Deck: ", filteredDeck);
-    //   setCards(filteredDeck[0].cards);
-    //   setDeck(filteredDeck[0]);
-    // }
-
-
     useEffect(() => {
       loadDeck(); 
       }, [loadDeck]);
