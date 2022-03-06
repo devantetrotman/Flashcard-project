@@ -5,17 +5,6 @@ import Header from "./Header";
 
 
 function Decks({ decks, loadDecks }){
-  
-  // async function loadDeck() {
-  //   const newDeck = await listDecks();
-  //   const newCards = newDeck.cards;
-  //   setDeck(newDeck);
-  //   setCards(newCards);
-  // }
-
-  // useEffect(() => {
-  //   loadDeck(); 
-  //   }, []);
 
   useEffect(() => {
     loadDecks();
