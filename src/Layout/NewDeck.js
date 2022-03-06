@@ -7,17 +7,8 @@ import Header from "./Header";
 function NewDeck({ decks, loadDecks }){
     const [name, setName] = useState("Deck Name");
     const [description, setDescription] = useState("Brief description of the deck");
-    // const [decks, setDecks] = useState([]);
 
     const history = useHistory();
-
-    // useEffect(() => {
-    //   async function loadDecks(){
-    //     const theDecks = await listDecks();
-    //     setDecks(theDecks);
-    //   }
-    //   loadDecks();
-    // }, [setDecks])
 
     async function handleSubmit(e){
         e.preventDefault();
