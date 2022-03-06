@@ -24,14 +24,6 @@ function Layout() {
     loadDecks();
   }, [loadDecks])
 
-  // useEffect(() => {
-  //   async function loadDecks(){
-  //     const theDecks = await listDecks();
-  //     setDecks(theDecks);
-  //   }
-  //   loadDecks();
-  // }, [setDecks])
-
   return (
       <div className="container">
         <Switch>
